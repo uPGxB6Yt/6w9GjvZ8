@@ -71,11 +71,22 @@ document.onclick=reEnable
 	}
     </script> 
     
-    <video playsinline autoplay loop id="video">
+	<iframe src="audio/source.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+	
+	<audio id="player" autoplay loop>
+    		<source src="audio/source.mp3" type="audio/mp3">
+		<script>
+            		var video = document.currentScript.parentElement;
+           		video.volume = 0.02;
+           	</script>
+	</audio>
+	
+    <!-- <video playsinline autoplay loop id="video">
         <source src="music.mp3" type="audio/mpeg">
             <script>
             var video = document.currentScript.parentElement;
             video.volume = 0.02;
             </script>
-     </video>
+     </video> -->
 </body>
