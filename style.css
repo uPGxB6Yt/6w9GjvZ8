@@ -1,86 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald|Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-p {
-    text-decoration: none;
-    transition: 0.2s;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 140%;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Oswald', sans-serif;
-    margin: 20;
+@import "colors.css";
+
+
+* {
+	font-family: "Iosevka";
+	font-size: 20px;
 }
-a {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 120%;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    transition: 0.5s;
-    color: greenyellow;
+
+
+html {
+    /*font-size: 18px;*/
+    /*font-family: 'Roboto Mono', monospace;*/
+    /*font-weight: black;*/
+    background-color: var(--background);
+    color: var(--foreground);
 }
-a:hover {
-    color: gray;
-}
-.title {
-    font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 1px 1px 2px black;
-    letter-spacing: 0px;
-    font-weight: 1200;
-    font-size: 1vw;
-    color: white;
+
+.box {
+    width: 700px;
+    right: 50%;
     bottom: 50%;
-    text-align: center;
-    font-size: 200%;
-    vertical-align: middle;
-    text-shadow: greenyellow;
-}
-#mid {
-	z-index: 100;
+    transform: translate(50%, 50%);
     position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
 }
 
-#video {
-	position: fixed;
-	min-width: 120%;
-	min-height: 100%;
-	z-index: -100;
-	transform: translate(-50%, -50%);
-	background: rgba(7, 9, 21, .5);
-	filter: brightness(65%) grayscale(100%) blur(0.5vw);
+.categories {
+    float: left;
+    margin 0px;
+    width: 20%;
+    text-align: left;
 }
 
-body {
-    background-color: #333;
-    color: lightgray;
-    overflow: hidden;
-
-    font-size: 1.5vw;
-    font-weight: 400;
-    text-shadow: 0px 0px 3px black;
-	font-family: 'Source Sans Pro', sans-serif;
-	
-    -webkit-user-select: none;
-    /* Chrome all / Safari all */
-    -moz-user-select: none;
-    /* Firefox all */
-    -ms-user-select: none;
-    /* IE 10+ */
-    user-select: none;
-    /* Likely future */
+.items {
+    float: left;
+    margin 0px;
+    width: 80%;
+    text-align: left;
 }
 
-#body, video {
-	top: 50%;
-	left: 50%
+.lst {
+    /*padding: 5px;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--foreground);
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+a:visited {
+    color: var(--foreground);
+}
+
+.cat {
+    font-weight: 700;
 }
