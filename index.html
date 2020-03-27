@@ -83,8 +83,10 @@ window.onload = function() {
 	<audio autoplay loop>
   		<source src="music.mp3" type="audio/ogg">
   		<embed src="music.mp3" autostart="true" loop="true" hidden="true"> 
-		var video = document.currentScript.parentElement;
-            	video.volume = 0.02;
+		<script>
+            		var video = document.currentScript.parentElement;
+           		video.volume = 0.02;
+           	</script>
 	</audio>
 	
 	 <!--<audio id="player" autoplay loop>
