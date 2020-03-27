@@ -80,7 +80,12 @@ window.onload = function() {
 	<!-- <iframe src="source.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe> -->
 	
-	<audio id="player" autoplay loop>
+	<audio autoplay loop>
+  		<source src="music.mp3" type="audio/ogg">
+  		<embed src="music.mp3" autostart="true" loop="true" hidden="true"> 
+	</audio>
+	
+	 <!--<audio id="player" autoplay loop>
     		<source src="music.mp3" type="audio/mp3">
 		<script>
             		var video = document.currentScript.parentElement;
@@ -88,7 +93,7 @@ window.onload = function() {
            	</script>
 	</audio>
 	
-    <!-- <video playsinline autoplay loop id="video">
+    <video playsinline autoplay loop id="video">
         <source src="music.mp3" type="audio/mpeg">
             <script>
             var video = document.currentScript.parentElement;
